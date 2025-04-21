@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 36% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 222 47% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 222 47% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 346 100% 59%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 100% 50%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 10% 70%;
+
+    --accent: 220 25% 20%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 30% 18%;
+    --input: 220 30% 18%;
+    --ring: 346 100% 59%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-roboto;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold;
+  }
+}
+
+@layer components {
+  .movie-card {
+    @apply relative overflow-hidden rounded-lg transition-all duration-300;
+  }
+  
+  .movie-card:hover {
+    @apply transform scale-[1.03] shadow-xl shadow-primary/20;
+  }
+  
+  .movie-card-content {
+    @apply absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-4 flex flex-col justify-end opacity-0 transition-opacity duration-300;
+  }
+  
+  .movie-card:hover .movie-card-content {
+    @apply opacity-100;
+  }
+
+  .hero-search {
+    @apply relative z-10 w-full max-w-3xl mx-auto shadow-xl shadow-black/30;
+  }
+
+  .hero-gradient {
+    @apply absolute inset-0 bg-gradient-to-b from-background/80 via-background to-background;
+  }
+  
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold mb-6 text-foreground/90 border-l-4 border-primary pl-3;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+}
