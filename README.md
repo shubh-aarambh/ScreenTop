@@ -1,73 +1,72 @@
-# Welcome to your project
+# ScreenTop - Movie Recommendation System
 
-## Project info
+ScreenTop is an innovative movie recommendation system that combines the power of AI and movie databases to provide personalized movie suggestions based on user prompts.
 
-**URL**: https://example.com/projects/bb51a839-0991-44f7-a2c1-86fee855990b
+## 🎯 Features
 
-## How can I edit this code?
+- **AI-Powered Analysis**: Utilizes Google's Gemini AI to analyze user prompts and understand movie preferences
+- **Movie Database Integration**: Connects with OMDB API to fetch detailed movie information
+- **Smart Recommendations**: Provides relevant movie suggestions based on user input
+- **Interactive Interface**: User-friendly design for seamless interaction
 
-There are several ways of editing your application.
+## 🚀 How It Works
 
-**Use the development environment**
+1. **User Input**: Users enter a prompt describing their movie preferences (e.g., "interstellar but funny")
+2. **AI Analysis**: The prompt is processed by Gemini AI to understand the user's preferences
+3. **Movie Search**: The system queries the OMDB API to find matching movies
+4. **Results Display**: Relevant movie recommendations are displayed to the user
 
-Simply visit the [Project](https://example.com/projects/bb51a839-0991-44f7-a2c1-86fee855990b) and start prompting.
+## 🛠️ Technologies Used
 
-Changes made via the development environment will be committed automatically to this repo.
+- **Frontend**:
+  - React
+  - TypeScript
+  - Vite
+  - Tailwind CSS
+  - shadcn-ui
 
-**Use your preferred IDE**
+- **APIs**:
+  - Google Gemini AI
+  - OMDB API
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in the development environment.
+## 🏃‍♂️ Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone https://github.com/shubh-aarambh/ScreenTop.git
+```
 
-Follow these steps:
+2. Navigate to the project directory:
+```bash
+cd ScreenTop
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Install dependencies:
+```bash
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. Create a `.env` file in the root directory and add your API keys:
+```env
+VITE_GEMINI_API_KEY=your_gemini_api_key
+VITE_OMDB_API_KEY=your_omdb_api_key
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+5. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 📝 API Keys Required
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+To use this application, you'll need:
+1. A Google Gemini AI API key
+2. An OMDB API key
 
-**Use GitHub Codespaces**
+## 🤝 Contributing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## What technologies are used for this project?
+## 📄 License
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [the project](https://example.com/projects/bb51a839-0991-44f7-a2c1-86fee855990b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.example.com/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the LICENSE file for details.
